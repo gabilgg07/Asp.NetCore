@@ -30,3 +30,4 @@
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/AspNetMvcCoreEmpty.Intro/obj/Debug/netcoreapp3.1/AspNetMvcCoreEmpty.Intro.pdb
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/AspNetMvcCoreEmpty.Intro/obj/Debug/netcoreapp3.1/AspNetMvcCoreEmpty.Intro.genruntimeconfig.cache
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/AspNetMvcCoreEmpty.Intro/obj/Debug/netcoreapp3.1/AspNetMvcCoreEmpty.Intro.csproj.CopyComplete
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/AspNetMvcCoreEmpty.Intro/obj/Debug/netcoreapp3.1/Razor/Views/Home/About.cshtml.g.cs
