@@ -28,7 +28,9 @@ namespace AspNetMvcCoreEmpty.Intro
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapDefaultControllerRoute();
+                //endpoints.MapDefaultControllerRoute();
+                endpoints.MapControllerRoute("default",
+                    "{controller=home}/{action=index}");
             });
         }
     }
