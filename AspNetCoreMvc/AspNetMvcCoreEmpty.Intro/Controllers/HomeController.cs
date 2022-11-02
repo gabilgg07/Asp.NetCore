@@ -13,6 +13,10 @@ namespace AspNetMvcCoreEmpty.Intro.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
     }
 }
 

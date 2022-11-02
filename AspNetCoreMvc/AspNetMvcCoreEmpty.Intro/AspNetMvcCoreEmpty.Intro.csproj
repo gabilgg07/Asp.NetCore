@@ -17,5 +17,23 @@
     <Folder Include="Views\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="wwwroot\assets\css\" />
+    <Folder Include="wwwroot\assets\js\" />
+    <Folder Include="wwwroot\assets\scss\" />
+    <Folder Include="wwwroot\assets\images\" />
+    <Folder Include="wwwroot\libs\" />
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\assets\" />
+    <Content Remove="wwwroot\assets\css\" />
+    <Content Remove="wwwroot\assets\js\" />
+    <Content Remove="wwwroot\assets\scss\" />
+    <Content Remove="wwwroot\assets\images\" />
+    <Content Remove="wwwroot\libs\" />
+    <Content Remove="wwwroot\uploads\" />
   </ItemGroup>
 </Project>
