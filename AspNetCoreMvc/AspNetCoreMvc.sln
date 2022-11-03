@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcCoreEmpty.Intro", "AspNetMvcCoreEmpty.Intro\AspNetMvcCoreEmpty.Intro.csproj", "{45D211CE-B275-4DE7-B37B-B5AA3C1FD7D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeId.WebUI", "HomeId.WebUI\HomeId.WebUI.csproj", "{B8F51FBE-4657-4EC6-807E-9C4B23470F55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{45D211CE-B275-4DE7-B37B-B5AA3C1FD7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D211CE-B275-4DE7-B37B-B5AA3C1FD7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45D211CE-B275-4DE7-B37B-B5AA3C1FD7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F51FBE-4657-4EC6-807E-9C4B23470F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F51FBE-4657-4EC6-807E-9C4B23470F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F51FBE-4657-4EC6-807E-9C4B23470F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F51FBE-4657-4EC6-807E-9C4B23470F55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

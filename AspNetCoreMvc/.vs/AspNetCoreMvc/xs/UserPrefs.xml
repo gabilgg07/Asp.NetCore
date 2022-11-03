@@ -1,4 +1,42 @@
 ﻿<Properties StartupConfiguration="{45D211CE-B275-4DE7-B37B-B5AA3C1FD7D8}|Default">
-  <MonoDevelop.Ide.ItemProperties.AspNetMvcCoreEmpty.Intro FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.HomeId.WebUI FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.AspNetMvcCoreEmpty.Intro PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AspNetMvcCoreEmpty.Intro/Startup.cs">
+    <Files>
+      <File FileName="AspNetMvcCoreEmpty.Intro/Controllers/HomeController.cs" Line="14" Column="27" />
+      <File FileName="AspNetMvcCoreEmpty.Intro/Views/Shared/_Layout.cshtml" Line="7" Column="56" />
+      <File FileName="AspNetMvcCoreEmpty.Intro/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="AspNetMvcCoreEmpty.Intro/Views/Home/Index.cshtml" Line="2" Column="15" />
+      <File FileName="AspNetMvcCoreEmpty.Intro/Startup.cs" Line="27" Column="34" />
+      <File FileName="AspNetMvcCoreEmpty.Intro/Views/Home/About.cshtml" Line="2" Column="10" />
+      <File FileName="AspNetMvcCoreEmpty.Intro/wwwroot/assets/css/style.css" Line="2" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AspNetCoreMvc" expanded="True">
+            <Node name="AspNetMvcCoreEmpty.Intro" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True">
+                  <Node name="css" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MultiItemStartupConfigurations />
 </Properties>
