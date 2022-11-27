@@ -1,0 +1,52 @@
+﻿@*@using DemoMvc.Models;*@
+@model Person
+
+@{
+    ViewBag.Title = "Send Person";
+    Person per = ViewBag.Person as Person;
+}
+
+<h1 style="margin: 20px 10px; color: darkkhaki; font-size: 32px; ">
+    @ViewBag.Title
+</h1>
+
+<div class="container">
+    <div class="wrapper">
+        <ul style="margin: 20px 10px;">
+            <li style="color:darkolivegreen; font-size:28px; margin-bottom: 10px;">Links</li>
+            <li>
+                <a href="index">Index</a>
+            </li>
+            <li>
+                <a href="About">About</a>
+            </li>
+            <li>
+                <a href="SendPersons">Send Persons</a>
+            </li>
+        </ul>
+        <ul style="margin: 20px 10px;">
+            <li style="color:darkgoldenrod; font-size:28px; margin-bottom: 10px;">Person</li>
+            <li>
+                Person -> ViewBag.Person: >> @ViewBag.Person <<
+            </li>
+            <li>
+                Person -> ViewData["Person"]: >> @ViewData["Person"] <<
+            </li>
+            <li>
+                Person -> TempData["Person"]: >> @TempData["Person"] <<
+            </li>
+            <li>
+                Person.Name -> per.Name: >> @per.Name <<
+            </li>
+            <li>
+                Person -> Model: >> @Model <<
+            </li>
+            <li>
+                Person.Name -> Model.Name: >> @Model.Name <<
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+

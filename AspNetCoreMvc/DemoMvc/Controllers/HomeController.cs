@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DemoMvc.Models;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -45,6 +46,48 @@ namespace DemoMvc.Controllers
         public IActionResult About()
         {
             return View();
+        }
+
+        public IActionResult SendPerson()
+        {
+            var p = new Person()
+            {
+                Name = "Qabil",
+                Surname = "Qurbanov"
+            };
+
+            ViewBag.Person = p;
+            TempData["Person"] = p;
+
+            var per = new Person()
+            {
+                Name = "Sahil",
+                Surname = "Sedefli"
+            };
+
+            return View(per);
+        }
+
+        public IActionResult SendPersons()
+        {
+            var p = new Person()
+            {
+                Name = "Qabil",
+                Surname = "Qurbanov"
+            };
+
+            var per = new Person()
+            {
+                Name = "Sahil",
+                Surname = "Sedefli"
+            };
+
+            List<Person> people = new List<Person>();
+
+            people.Add(p);
+            people.Add(per);
+
+            return View(people);
         }
     }
 }
