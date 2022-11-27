@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1 style="margin: 20px 10px; color: darkkhaki; font-size: 32px; ">
+    Index
+</h1>
+
+<div class="container">
+    <div class="wrapper">
+        <ul style="margin: 20px 10px;">
+            <li style="color:darkgoldenrod; font-size:28px; margin-bottom: 10px;">ViewBag</li>
+            <li>
+                group: >> @ViewBag.group <<
+            </li>
+            <li>
+                userName: >> @ViewBag.userName <<
+            </li>
+            <li>
+                NumberA: >> @ViewBag.numA <<
+            </li>
+            <li>
+                NumberB: >> @ViewBag.numB <<
+            </li>
+            <li>
+                NumberA + NumberB: >> @(ViewBag.numA + ViewBag.numB) <<
+            </li>
+            <li>
+                Keys sensetive deyil: <br />
+                Numbera + Numberb: >> @(ViewBag.numa + ViewBag.numb) <<
+            </li>
+            <li>
+                Olmayan bir ViewBag Key-inde error qaytarmir: <br />
+                Number(teyin edilmiyib): >> @ViewBag.num <<
+            </li>
+            <li>
+                NaN qayidir ve NaN uzerine eded gelsek de NaN qayidir.<br />
+                Number(yoxdu) + Numberb: >> @(ViewBag.num + ViewBag.numb) <<
+            </li>
+        </ul>
+
+        <ul style="margin: 20px 10px;">
+            <li style="color: teal; font-size: 28px; margin-bottom: 10px;">ViewData</li>
+            <li>
+                value1: >> @ViewData["value1"] <<
+            </li>
+            <li>
+                value2: >> @ViewData["value2"] <<
+            </li>
+            <li>
+                valueA: >> @ViewData["valueA"] <<
+            </li>
+            <li>
+                Keys sensetive deyil: <br />
+                valueb: >> @ViewData["valueb"] <<
+            </li>
+            <li>
+                valueA + valueB: >> @(Convert.ToInt32(ViewData["valueA"]) + Convert.ToInt32(ViewData["valueb"])) <<
+            </li>
+            <li>
+                ViewData ile yazdigimizi ViewBagle oxuya bilirik, ve ya eksine: <br />
+                valueA -> ViewBag.valueA: >> @ViewBag.valueA <<
+            </li>
+        </ul>
+    </div>
+</div>
+
+

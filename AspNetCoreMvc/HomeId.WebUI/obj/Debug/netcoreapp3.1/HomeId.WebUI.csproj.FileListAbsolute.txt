@@ -30,3 +30,8 @@
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/HomeId.WebUI.pdb
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/HomeId.WebUI.genruntimeconfig.cache
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/HomeId.WebUI.csproj.CopyComplete
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/staticwebassets/HomeId.WebUI.StaticWebAssets.Pack.cache
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.HomeId.WebUI.Microsoft.AspNetCore.StaticWebAssets.props
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.build.HomeId.WebUI.props
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildMultiTargeting.HomeId.WebUI.props
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildTransitive.HomeId.WebUI.props

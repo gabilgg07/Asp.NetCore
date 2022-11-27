@@ -18,8 +18,14 @@
     <Folder Include="wwwroot\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="wwwroot\uploads\" />
+    <Folder Include="wwwroot\libs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\assets\" />
+    <Content Remove="wwwroot\uploads\" />
+    <Content Remove="wwwroot\libs\" />
   </ItemGroup>
 </Project>

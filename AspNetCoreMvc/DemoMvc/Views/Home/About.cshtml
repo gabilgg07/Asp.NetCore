@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<h1 style="margin: 20px 10px; color: darkkhaki; font-size: 32px; ">
+    Index
+</h1>
+
+<div class="container">
+    <div class="wrapper">
+        <ul style="margin: 20px 10px;">
+            <li style="color:darkgoldenrod; font-size:28px; margin-bottom: 10px;">ViewBag</li>
+            <li>
+                group: >> @ViewBag.group <<
+            </li>
+            <li>
+                userName: >> @ViewBag.userName <<
+            </li>
+            <li>
+                NumberA: >> @ViewBag.numA <<
+            </li>
+            <li>
+                NumberB: >> @ViewBag.numB <<
+            </li>
+        </ul>
+
+        <ul style="margin: 20px 10px;">
+            <li style="color: teal; font-size: 28px; margin-bottom: 10px;">ViewData</li>
+            <li>
+                value1: >> @ViewData["value1"] <<
+            </li>
+            <li>
+                value2: >> @ViewData["value2"] <<
+            </li>
+            <li>
+                valueA: >> @ViewData["valueA"] <<
+            </li>
+        </ul>
+
+        <ul style="margin: 20px 10px;">
+            <li style="color: blueviolet; font-size: 28px; margin-bottom: 10px;">TempData</li>
+            <li>
+                value4: >> @TempData["value4"] <<
+            </li>
+            <li>
+                value5: >> @TempData["value5"] <<
+            </li>
+            <li>
+                valueC Peek-le: >> @TempData.Peek("valueC") <<
+            </li>
+            <li>
+                valueD: >> @TempData["valueD"] <<
+            </li>
+            <li>
+                valueC + valueD: >> @(Convert.ToInt32(TempData.Peek("valueC")) + Convert.ToInt32(TempData["valueD"])) <<
+            </li>
+            <li>
+                Silinmesini istemediyimiz data-ni, Peek methodu ile saxlaya bilirik, (cookie de saxlanilir): <br />
+                valueD Peek-le: >> @TempData.Peek("valueE") <<
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+

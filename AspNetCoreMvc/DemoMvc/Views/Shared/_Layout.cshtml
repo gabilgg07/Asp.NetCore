@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .wrapper{
+            display: flex;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        ul li{
+            list-style: none;
+            font-size:18px;
+            margin-bottom: 5px;
+            color: rgba(0,0,0, 0.7);
+            padding: 15px 10px;
+            border: 1px solid darkgreen;
+        }
+    </style>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+
