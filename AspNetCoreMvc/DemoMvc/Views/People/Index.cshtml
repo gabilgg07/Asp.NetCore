@@ -16,6 +16,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Surname</th>
+                <th scope="col">Profession</th>
                 <th scope="col">Buttons</th>
             </tr>
         </thead>
@@ -26,6 +27,7 @@
                     <th scope="row">@p.Id</th>
                     <td>@p.Name</td>
                     <td>@p.Surname</td>
+                    <td>@p.Profession?.Name</td>
                     <td><a href="/people/details/@p.Id">Detail Route</a></td>
                     <td><a href="/people/details?id=@p.Id">Detail Query</a></td>
                 </tr>

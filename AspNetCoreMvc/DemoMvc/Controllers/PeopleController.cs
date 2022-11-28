@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DemoMvc.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DemoMvc.Controllers
 {
@@ -12,8 +13,16 @@ namespace DemoMvc.Controllers
 
         static List<Person> people = new List<Person>()
         {
-            new Person("Hesen", "Fikretov"),
-            new Person("Malik", "Nusretli")
+            new Person{Name= "Hesen", Surname = "Fikretov" },
+            new Person{Name = "Malik",Surname = "Nusretli" }
+        };
+
+        static List<Profession> professions = new List<Profession>()
+        {
+            new Profession("Developer"),
+            new Profession("Data Administrator"),
+            new Profession("News Reporter"),
+            new Profession("Physical therapist")
         };
 
         public IActionResult Index()
@@ -21,17 +30,23 @@ namespace DemoMvc.Controllers
             return View(people);
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            ViewBag.Professions = new SelectList(professions, "Id", "Name");
+            return View(people);
         }
 
         [HttpPost]
-        public IActionResult Create(string name, string surname)
+        //public IActionResult Create(string name, string surname, int age)
+        public IActionResult Create(Person person)
         {
-            var p = new Person(name, surname);
+            //var p = new Person(name, surname);
+            //p.Age = age;
 
-            people.Add(p);
+            person.Profession = professions.FirstOrDefault(p => p.Id == person.ProfessionId);
+
+            people.Add(person);
 
             return RedirectToAction("Index");
         }

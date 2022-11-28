@@ -3,14 +3,11 @@ namespace DemoMvc.Models
 {
 	public class Person
 	{
-        static private int _count = 1;
+        static private int count = 0;
 
-        public Person(string name, string surname)
+        public Person()
         {
-            this.Id = _count;
-            _count++;
-            this.Name = name;
-            this.Surname = surname;
+            this.Id = ++count;
         }
 
 		public int Id { get; }
@@ -19,9 +16,15 @@ namespace DemoMvc.Models
 
         public string Surname { get; set; }
 
+        public int Age { get; set; }
+
+        public int ProfessionId { get; set; }
+
+        public Profession Profession { get; set; }
+
         public override string ToString()
         {
-            return $"{Name} {Surname}";
+            return $"{Name} {Surname} - {Age}";
         }
     }
 }
