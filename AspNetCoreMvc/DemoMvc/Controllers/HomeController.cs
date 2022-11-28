@@ -50,37 +50,21 @@ namespace DemoMvc.Controllers
 
         public IActionResult SendPerson()
         {
-            var p = new Person()
-            {
-                Name = "Qabil",
-                Surname = "Qurbanov"
-            };
+            var p = new Person("Qabil", "Qurbanov");
 
             ViewBag.Person = p;
             TempData["Person"] = p;
 
-            var per = new Person()
-            {
-                Name = "Sahil",
-                Surname = "Sedefli"
-            };
+            var per = new Person("Sahil", "Sedefli");
 
             return View(per);
         }
 
         public IActionResult SendPersons()
         {
-            var p = new Person()
-            {
-                Name = "Qabil",
-                Surname = "Qurbanov"
-            };
+            var p = new Person("Qabil", "Qurbanov");
 
-            var per = new Person()
-            {
-                Name = "Sahil",
-                Surname = "Sedefli"
-            };
+            var per = new Person("Sahil", "Sedefli");
 
             List<Person> people = new List<Person>();
 

@@ -1,0 +1,36 @@
+﻿@model List<Person>
+
+
+@{
+    ViewBag.Title = "People Index";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+        <h1 class="text-info m-0">@ViewBag.Title</h1>
+        <a href="/people/create" class="btn btn-outline-success d-flex align-items-center">Add Person</a>
+    </div>
+    <table class="table w-50">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Buttons</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <th scope="row">@p.Id</th>
+                    <td>@p.Name</td>
+                    <td>@p.Surname</td>
+                    <td><a href="/people/details/@p.Id">Detail Route</a></td>
+                    <td><a href="/people/details?id=@p.Id">Detail Query</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

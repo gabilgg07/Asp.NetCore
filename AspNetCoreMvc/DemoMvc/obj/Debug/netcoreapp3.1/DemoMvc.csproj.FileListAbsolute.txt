@@ -39,3 +39,6 @@
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/Razor/Views/Home/SendPerson.cshtml.g.cs
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/Razor/Views/Home/SendPersons.cshtml.g.cs
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/Razor/Views/People/Create.cshtml.g.cs
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/Razor/Views/People/Index.cshtml.g.cs
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/Razor/Views/People/Details.cshtml.g.cs
