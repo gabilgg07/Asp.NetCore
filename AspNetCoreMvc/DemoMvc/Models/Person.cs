@@ -1,4 +1,7 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using DemoMvc.AppCode.Attributes.Validations;
+
 namespace DemoMvc.Models
 {
 	public class Person
@@ -12,12 +15,22 @@ namespace DemoMvc.Models
 
 		public int Id { get; }
 
-		public string Name { get; set; }
+        [Required]
+        [MinLength(3)]
+        [MaxLength(50)]
+        public string Name { get; set; }
 
+
+        [Required]
+        [MinLength(3)]
+        [MaxLength(50)]
         public string Surname { get; set; }
 
+        [GratherThan18]
         public int Age { get; set; }
 
+
+        [RequiredForeignKey]
         public int ProfessionId { get; set; }
 
         public Profession Profession { get; set; }

@@ -11,6 +11,9 @@
     <None Remove="Views\Shared\" />
     <None Remove="Models\" />
     <None Remove="Views\People\" />
+    <None Remove="AppCode\" />
+    <None Remove="AppCode\Attributes\" />
+    <None Remove="AppCode\Attributes\Validations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -24,6 +27,9 @@
     <Folder Include="wwwroot\assets\css\" />
     <Folder Include="wwwroot\assets\images\" />
     <Folder Include="wwwroot\assets\js\" />
+    <Folder Include="AppCode\" />
+    <Folder Include="AppCode\Attributes\" />
+    <Folder Include="AppCode\Attributes\Validations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

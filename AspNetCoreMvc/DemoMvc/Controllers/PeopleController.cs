@@ -34,21 +34,34 @@ namespace DemoMvc.Controllers
         public IActionResult Create()
         {
             ViewBag.Professions = new SelectList(professions, "Id", "Name");
-            return View(people);
+            return View();
         }
 
         [HttpPost]
         //public IActionResult Create(string name, string surname, int age)
         public IActionResult Create(Person person)
         {
-            //var p = new Person(name, surname);
-            //p.Age = age;
+            if (ModelState.IsValid)
+            {
 
-            person.Profession = professions.FirstOrDefault(p => p.Id == person.ProfessionId);
+                //var p = new Person
+                //{
+                //    Name = name,
+                //    Surname = surname,
+                //    Age = age
+                //}
 
-            people.Add(person);
+                person.Profession = professions.FirstOrDefault(p => p.Id == person.ProfessionId);
 
-            return RedirectToAction("Index");
+                people.Add(person);
+
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.Professions = new SelectList(professions, "Id", "Name", person.ProfessionId);
+
+            return View(person);
+
         }
 
         // Model Bilding hem formdan oxuya bilir,
