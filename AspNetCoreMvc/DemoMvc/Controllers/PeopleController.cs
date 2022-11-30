@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DemoMvc.Models.DataContext;
 using DemoMvc.Models.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -53,6 +54,7 @@ namespace DemoMvc.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         //public IActionResult Create(string name, string surname, int age)
         public IActionResult Create(Person person)
         {
@@ -111,6 +113,7 @@ namespace DemoMvc.Controllers
 
         [HttpPost]
         [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
         public IActionResult ConfirmedDelete(int? id)
         {
 
@@ -126,6 +129,7 @@ namespace DemoMvc.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult AcceptDelete(int? id)
         {
 
@@ -137,6 +141,45 @@ namespace DemoMvc.Controllers
             //return RedirectToAction("Index");
             // bele de yaza bilerik
             return RedirectToAction(nameof(Index));
+        }
+
+
+        public IActionResult Edit(int? id)
+        {
+
+            Person per = db.People.Include(p => p.Profession).FirstOrDefault(p => p.Id == id);
+
+            List<Profession> professions = db.Professions.ToList();
+            ViewBag.Professions = new SelectList(professions, "Id", "Name", per.ProfessionId);
+            return View(per);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        // people.delete icazesi olanlar sile biler kimi bir sey
+        // [Authorize(Policy ="people.delete")]
+
+        public IActionResult Edit(int? id, Person model)
+        {
+
+            if (id != model.Id)
+            {
+                return BadRequest();
+            }
+
+            if (ModelState.IsValid)
+            {
+                db.People.Update(model);
+                db.SaveChanges();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            List<Profession> professions = db.Professions.ToList();
+            ViewBag.Professions = new SelectList(professions, "Id", "Name", model.ProfessionId);
+            return View(model);
         }
     }
 }

@@ -1,0 +1,40 @@
+﻿@model Person
+@{
+    ViewBag.Title = "People Update";
+}
+
+
+<div class="container mt-5">
+
+    <h1 class="text-info m-0 mb-4">@ViewBag.Title</h1>
+    <form method="post" class="w-50">
+        <fieldset>
+            <legend>Edit Currennt Person</legend>
+            <input type="hidden" asp-for="Id" />
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" asp-for="Name">
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Surname" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="surname" asp-for="Surname">
+                <span asp-validation-for="Surname"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" asp-for="Age">
+                <span asp-validation-for="Age"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ProfessionId" class="form-label">Professions</label>
+                <select asp-items="ViewBag.Professions" asp-for="ProfessionId">
+                    <option selected disabled>Choose</option>
+                </select>
+                <span asp-validation-for="ProfessionId"></span>
+            </div>
+            <button type="submit" class="btn btn-secondary">Edit</button>
+            <a asp-controller="people" asp-action="index" class="btn btn-success ms-3">Geri Qayit</a>
+        </fieldset>
+    </form>
+</div>

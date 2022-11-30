@@ -16,11 +16,10 @@
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Surname</th>
-                <th scope="col">Age</th>
-                <th scope="col">Profession</th>
                 @*<th scope="col">Route Button</th>*@
                 @*<th scope="col">Query Button</th>*@
                 <th scope="col">View Buttons</th>
+                <th scope="col">Edit Buttons</th>
                 <th scope="col">Delete Buttons</th>
             </tr>
         </thead>
@@ -31,9 +30,8 @@
                     <th scope="row">@p.Id</th>
                     <td>@p.Name</td>
                     <td>@p.Surname</td>
-                    <td>@p.Age</td>
-                    <td>@p.Profession?.Name</td>
-                    <td class="text-center"><a asp-controller="people" asp-action="details" asp-route-id="@p.Id" class="btn btn-warning">View</a></td>
+                    <td class="text-center"><a asp-controller="people" asp-action="details" asp-route-id="@p.Id" class="btn btn-success">View</a></td>
+                    <td class="text-center"><a asp-controller="people" asp-action="edit" asp-route-id="@p.Id" class="btn btn-warning">Edit</a></td>
                     @*<td><a href="/people/details?id=@p.Id">Detail Query</a></td>*@
                     <td class="text-center"><a asp-controller="people" asp-action="delete" asp-route-id="@p.Id" class="btn btn-danger">Remove</a></td>
                 </tr>
