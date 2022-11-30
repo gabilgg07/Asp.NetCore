@@ -14,13 +14,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 3 "/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/Views/_ViewImports.cshtml"
-using DemoMvc.Models;
+using DemoMvc.Models.Entity;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"da27e66906f4f57ace1cf79a711aa5dbf0bbfa54", @"/Views/People/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8fa1668eeecaa0e900621a09cdedcade0428bc23", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f648d996098db281861c4d0178dc35521b3113e6", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_People_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Person>>
     #nullable disable

@@ -1,12 +1,12 @@
 ﻿using System;
-namespace DemoMvc.Models
+namespace DemoMvc.Models.Entity
 {
 	public class Profession
 	{
-		static int count = 0;
+		//static int count = 0;
 		public Profession(string name)
 		{
-			Id = ++count;
+			//Id = ++count;
 			Name = name;
 		}
 
