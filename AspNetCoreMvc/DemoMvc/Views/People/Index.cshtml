@@ -8,7 +8,7 @@
 <div class="container mt-5">
     <div class="d-flex justify-content-between mb-3">
         <h1 class="text-info m-0">@ViewBag.Title</h1>
-        <a href="/people/create" class="btn btn-outline-success d-flex align-items-center">Add Person</a>
+        <a asp-controller="people" asp-action="create" class="btn btn-outline-success d-flex align-items-center">Add Person</a>
     </div>
     <table class="table w-50">
         <thead class="table-dark">
@@ -18,8 +18,10 @@
                 <th scope="col">Surname</th>
                 <th scope="col">Age</th>
                 <th scope="col">Profession</th>
-                <th scope="col">Route Button</th>
-                <th scope="col">Query Button</th>
+                @*<th scope="col">Route Button</th>*@
+                @*<th scope="col">Query Button</th>*@
+                <th scope="col">View Buttons</th>
+                <th scope="col">Delete Buttons</th>
             </tr>
         </thead>
         <tbody>
@@ -31,8 +33,9 @@
                     <td>@p.Surname</td>
                     <td>@p.Age</td>
                     <td>@p.Profession?.Name</td>
-                    <td><a href="/people/details/@p.Id">Detail Route</a></td>
-                    <td><a href="/people/details?id=@p.Id">Detail Query</a></td>
+                    <td class="text-center"><a asp-controller="people" asp-action="details" asp-route-id="@p.Id" class="btn btn-warning">View</a></td>
+                    @*<td><a href="/people/details?id=@p.Id">Detail Query</a></td>*@
+                    <td class="text-center"><a asp-controller="people" asp-action="delete" asp-route-id="@p.Id" class="btn btn-danger">Remove</a></td>
                 </tr>
             }
         </tbody>

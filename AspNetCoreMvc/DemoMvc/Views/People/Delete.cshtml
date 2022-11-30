@@ -1,0 +1,33 @@
+﻿@model Person
+
+
+@{
+    ViewBag.Title = "People Delete";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+        <h1 class="text-info m-0">@ViewBag.Title</h1>
+    </div>
+
+    <div class="w-50">
+
+        <h1 class="text-info m-5">Silmek istediyinizden eminsiniz?</h1>
+        <h2>@Model.Name @Model.Surname - @Model.Age</h2>
+        <p>Profession: <strong>@Model.Profession?.Name</strong></p>
+        <div class="buttons d-flex justify-contennt-between mb-4">
+            <form method="post">
+                <button type="submit" class="btn btn-warning">Beli</button>
+            </form>
+            <a asp-controller="people" asp-action="index" class="btn btn-success ms-3">Xeyr</a>
+        </div>
+        <h2 class="mt-5">Basqa bir actiona gonderib silmek ucun</h2>
+        <div class="buttons d-flex justify-contennt-between">
+            @* Basqa bir actiona gondermek ucun *@
+            <form method="post" asp-controller="people" asp-action="AcceptDelete" asp-route-id="@Model.Id">
+                <button type="submit" class="btn btn-warning">Beli</button>
+            </form>
+            <a asp-controller="people" asp-action="index" class="btn btn-success ms-3">Xeyr</a>
+        </div>
+    </div>
+</div>

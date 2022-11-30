@@ -100,6 +100,44 @@ namespace DemoMvc.Controllers
 
             return View(per);
         }
+
+        public IActionResult Delete(int? id)
+        {
+
+            Person per = db.People.Include(p => p.Profession).FirstOrDefault(p => p.Id == id);
+
+            return View(per);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        public IActionResult ConfirmedDelete(int? id)
+        {
+
+            Person per = db.People.Include(p => p.Profession).FirstOrDefault(p => p.Id == id);
+
+            db.People.Remove(per);
+            db.SaveChanges();
+
+            //return RedirectToAction("Index");
+            // bele de yaza bilerik
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpPost]
+        public IActionResult AcceptDelete(int? id)
+        {
+
+            Person per = db.People.Include(p => p.Profession).FirstOrDefault(p => p.Id == id);
+
+            db.People.Remove(per);
+            db.SaveChanges();
+
+            //return RedirectToAction("Index");
+            // bele de yaza bilerik
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
 

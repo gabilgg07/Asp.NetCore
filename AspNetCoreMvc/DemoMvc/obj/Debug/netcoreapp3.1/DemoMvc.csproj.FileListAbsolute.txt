@@ -154,3 +154,4 @@
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/DemoMvc.dll
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/DemoMvc.pdb
 /Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/DemoMvc.genruntimeconfig.cache
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/DemoMvc/obj/Debug/netcoreapp3.1/Razor/Views/People/Delete.cshtml.g.cs
