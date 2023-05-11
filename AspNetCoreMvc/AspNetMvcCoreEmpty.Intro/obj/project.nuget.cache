@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "WctiGurHj8TcjLCZ181f5xzoIc7A7vRqOcf6c1NpNK0dktnYSD2+bNJCJzpqnugShR9XcOwGZJNpq2lGrA475w==",
+  "dgSpecHash": "8gdPu56pdQ6FMmBA5eCJDUABS4W2tpmtMYLrDEWqAcUtY7bzlv2g8EpkfpOl7TeTWbpe7rLSY0fdsFjxs5XKZQ==",
   "success": true,
-  "projectFilePath": "/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/AspNetMvcCoreEmpty.Intro/AspNetMvcCoreEmpty.Intro.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Codes\\Asp.NetCore\\AspNetCoreMvc\\AspNetMvcCoreEmpty.Intro\\AspNetMvcCoreEmpty.Intro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

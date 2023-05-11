@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EUo1Dnq4/FTN7QBzNFlqt1QOBF9lq2p+Z0Y3hbllKa72jGBBgNAvFIH2cxnosdmotCFkivGa15C8UMeiPQtX8g==",
+  "dgSpecHash": "xduZMBpOXZPFaqD7kSU/aUuMQ6UwH8f9W3qpMFjvQnxH5Dl3odZhn93AHXn0xwzdyUM6++ty/bXMMYlOBsXQvw==",
   "success": true,
-  "projectFilePath": "/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/Asp.Net/Asp.NetCore/AspNetCoreMvc/HomeId.WebUI/HomeId.WebUI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Codes\\Asp.NetCore\\AspNetCoreMvc\\HomeId.WebUI\\HomeId.WebUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }
